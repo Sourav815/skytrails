@@ -14,11 +14,11 @@ curl -L -o setup_skytrails.sh https://raw.githubusercontent.com/Sourav815/skytra
 ```
 Give the script execution permission
 ```bash
-chmod +x setup-skytrails.sh
+chmod +x setup_skytrails.sh
 ```
 Run the script
 ```bash
-./setup-skytrails.sh
+./setup_skytrails.sh
 ```
 
 This will:  
