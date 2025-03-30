@@ -1,54 +1,57 @@
-# React + TypeScript + Vite
+### **📄 README.md for SkyTrails**  
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# 🚀 SkyTrails : Blogs  
 
-Currently, two official plugins are available:
+SkyTrails is a modern blog platform built with **React, Tailwind CSS, and TypeScript**. This guide will help you quickly set up the project on your local machine.  
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Expanding the ESLint configuration
+### **🔹 Quick Setup Using Bash Script**  
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+To **automate** the installation and setup, run the following command in your terminal:  
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+```bash
+curl -sS https://raw.githubusercontent.com/Sourav815/skytrails/main/setup-skytrails.sh | bash
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+This will:  
+✅ Clone the repository  
+✅ Install dependencies  
+✅ Start the development server  
+✅ Open the project in your browser  
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+---
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+### **🔹 Manual Setup (Alternative)**  
+If you prefer to set up manually, follow these steps:  
+
+1️⃣ **Clone the repository**  
+```bash
+git clone https://github.com/Sourav815/skytrails.git
+cd skytrails
+```
+
+2️⃣ **Install dependencies**  
+```bash
+npm install
+```
+
+3️⃣ **Start the development server**  
+```bash
+npm run dev
+```
+
+4️⃣ **Open in browser**  
+- Visit **[http://localhost:5173/](http://localhost:5173/)** in your browser  
+
+---
+
+## **🔧 Project Structure**  
+```
+/skytrails
+ ├── /src        # Source code (components, pages, utils, etc.)
+ ├── /public     # Static assets
+ ├── package.json  # Project dependencies
+ ├── tailwind.config.js  # Tailwind CSS configuration
+ ├── tsconfig.json  # TypeScript configuration
+ └── README.md  # Project documentation
 ```
