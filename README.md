@@ -10,7 +10,15 @@ SkyTrails is a modern blog platform built with **React, Tailwind CSS, and TypeSc
 To **automate** the installation and setup, run the following command in your terminal:  
 
 ```bash
-curl -sS https://raw.githubusercontent.com/Sourav815/skytrails/main/setup-skytrails.sh | bash
+curl -L -o setup_skytrails.sh https://raw.githubusercontent.com/Sourav815/skytrails/master/setup_skytrails.sh
+```
+Give the script execution permission
+```bash
+chmod +x setup-skytrails.sh
+```
+Run the script
+```bash
+./setup-skytrails.sh
 ```
 
 This will:  
