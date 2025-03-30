@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Tag, Search } from "lucide-react";
+import { Tag, Search, ExternalLink } from "lucide-react";
 import { Link } from "react-router-dom";
 
 interface Post {
@@ -83,9 +83,9 @@ export default function BlogPosts() {
                 <div className="flex justify-between">
                   <Link
                     to={`/${post.id}`}
-                    className="mt-4 text-blue-500 hover:underline cursor-pointer"
+                    className="mt-4 text-blue-500 flex justify-center items-center hover:underline cursor-pointer"
                   >
-                    Read More
+                    Read More <ExternalLink className="ml-2" size={16} />
                   </Link>
                   <h2 className="mt-4 flex">
                     <Tag className="rotate-90 mr-4" />
