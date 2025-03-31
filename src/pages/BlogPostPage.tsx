@@ -72,7 +72,7 @@ export default function BlogPostPage() {
           </p>
         </div>
       </div>
-      <div className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center h-80 bg-white overflow-hidden transition">
+      <div className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center h-auto bg-white overflow-hidden transition">
         <div className="p-6">
           <h3 className="text-xl font-bold mb-2">{post.summary}</h3>
           <p className="text-gray-500 text-sm mb-4">
