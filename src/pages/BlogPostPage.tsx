@@ -27,6 +27,8 @@ interface Social {
   mastodon: string;
   bluesky: string;
 }
+
+
 export default function BlogPostPage() {
   const { slug } = useParams();
   const [post, setPost] = useState<Post | null>(null);
@@ -63,8 +65,8 @@ export default function BlogPostPage() {
         className="relative w-full h-[60vh] flex items-center justify-center bg-cover bg-center text-white text-center px-6"
         style={{ backgroundImage: `url(${post.image_url})` }}
       >
-        <div className="bg-transparent p-10 rounded-2xl">
-          <h1 className="text-5xl font-bold mb-4">{post.title}</h1>
+        <div className="bg-transparen max-w-6xl p-4  sm:p-10 rounded-2xl">
+          <h1 className="text-3xl sm:text-5xl font-bold mb-4">{post.title}</h1>
           <p className="text-lg text-gray-300 mb-6">
             Discover amazing insights and stories.
           </p>
@@ -121,7 +123,6 @@ export default function BlogPostPage() {
   );
 }
 
-// **Skeleton Loader Component**
 function SkeletonLoader() {
   return (
     <div className="max-w-4xl mx-auto py-12 px-6">

@@ -87,7 +87,7 @@ export default function BlogPosts() {
                   >
                     Read More <ExternalLink className="ml-2" size={16} />
                   </Link>
-                  <h2 className="mt-4 flex">
+                  <h2 className="mt-4 flex sm:text-base text-sm">
                     <Tag className="rotate-90 mr-4" />
                     <span className="bg-gray-100 px-2 py-0.5 border-0 rounded-sm">
                       {post.news_site}
